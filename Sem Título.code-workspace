@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../Ola/site/Ola!"
+		},
+		{
+			"path": "../jokenpo"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../JunkiePow"
+		},
+		{
+			"path": "../../Nene/ChaNene/site"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "curso-JS"
+	}
+}

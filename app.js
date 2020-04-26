@@ -50,16 +50,21 @@ const PIECES = [
     [I2, '#731d12'],
     [J, '#d2f92C'],
     [PINGO, '#3239dC'],
+    [PINGO2, 'tomato'],
     // [DIAGONAL, '#7a8dd0'],
     [U, '#fadd90'],
     [H, '#36fc2C'],
-    [BLOCK, '#8f2c20'],
-    [VIRGULA, '#7a3C90'],
-    [TESAO, '#c39d2a'],
-    [LEGO, '#339caf'],
-    [Y, '#a9ef1A'],
-    [I, '#731d12'],
-    [V, '#d2f92C']
+    [BLOCK, 'yellow'],
+    [VIRGULA, '#0afC90'],
+    [VIRGULA2, '#1df2cf'],
+    [TESAO, '#339a67'],
+    [LEGO, '#d1fca0'],
+    [Y, '#3fab13'],
+    [I, '#230dcc'],
+    [I3, '#B3adf2'],
+    [barra, '#6d1B22'],
+    [V, '#a239cC'],
+    [V2, 'pink']
 ]
 
 // gerar novas peças após colisao piso 
