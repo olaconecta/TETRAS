@@ -53,7 +53,7 @@ const PIECES = [
     [PINGO2, 'tomato'],
     // [DIAGONAL, '#7a8dd0'],
     [U, '#fadd90'],
-    [H, '#36fc2C'],
+    // [H, '#36fc2C'],
     [BLOCK, 'yellow'],
     [VIRGULA, '#0afC90'],
     [VIRGULA2, '#1df2cf'],
@@ -255,47 +255,63 @@ function CONTROL(event) {
 let dropStart = Date.now();
 let gameOver = false;
 function drop() {
-    let quicker = 1000;
-    switch (points) {
-        case 100:
-            quicker-=50;
-            break;
-        case 200:
-            quicker-=50;
-            break;
-            
-        case 300:
-            quicker-=50;
-            break;
-            
-        case 400:
-            quicker-=50;
-            break;
-            
-        case 500:
-            quicker-=50;
-            break;
-            
-        case 600:
-            quicker-=50;
-            break;
-            
-        case 700:
-            quicker-=50;
-            break;
-        case 800:
-            quicker-=50;
-            break;
-            
-        case 900:
-            quicker-=100;
-            break;
-            
-        case 1000:
-            quicker-=100;
-            break;
-            
+    let quicker = 900;
+
+    if(points>= 100) {
+        quicker -=250;        
+    } 
+    if (points>=200) {
+        quicker -=400;        
     }
+     if (points>=300) {
+        quicker -=500;        
+    }
+     if (points>=400) {
+        quicker -=600;        
+    }
+     if (points>=500) {
+        quicker -=700;        
+    }
+    // switch (points) {
+    //     case 100:
+    //         quicker-=50;
+    //         break;
+    //     case 200:
+    //         quicker-=50;
+    //         break;
+            
+    //     case 300:
+    //         quicker-=50;
+    //         break;
+            
+    //     case 400:
+    //         quicker-=50;
+    //         break;
+            
+    //     case 500:
+    //         quicker-=50;
+    //         break;
+            
+    //     case 600:
+    //         quicker-=50;
+    //         break;
+            
+    //     case 700:
+    //         quicker-=50;
+    //         break;
+    //     case 800:
+    //         quicker-=50;
+    //         break;
+            
+    //     case 900:
+    //         quicker-=100;
+    //         break;
+            
+    //     case 1000:
+    //         quicker-=100;
+    //         break;
+            
+    // }
     
     let now = Date.now();
     let delta = now - dropStart;
@@ -306,6 +322,7 @@ function drop() {
     if(!gameOver) {
         requestAnimationFrame(drop);
     }
+    
 }
 
 drop();
