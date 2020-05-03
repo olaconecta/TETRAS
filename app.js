@@ -255,22 +255,22 @@ function CONTROL(event) {
 let dropStart = Date.now();
 let gameOver = false;
 function drop() {
-    let quicker = 900;
+    let quicker = 950;
 
     if(points>= 100) {
         quicker -=250;        
     } 
     if (points>=200) {
-        quicker -=400;        
+        quicker -=350;        
     }
      if (points>=300) {
-        quicker -=500;        
+        quicker -=400;        
     }
      if (points>=400) {
-        quicker -=600;        
+        quicker -=450;        
     }
      if (points>=500) {
-        quicker -=700;        
+        quicker -=500;        
     }
     // switch (points) {
     //     case 100:
