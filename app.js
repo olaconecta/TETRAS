@@ -261,12 +261,13 @@ function drop() {
         quicker -=250;        
     } 
     if (points>=200) {
-        quicker -=350;        
+        quicker -=150;        
     }
      if (points>=300) {
-        quicker -=50;        
+        quicker -=100;        
     }
      if (points>=400) {
+         
         quicker -=50;        
     }
      if (points>=500) {
